@@ -9,7 +9,7 @@ package sub3;
 public class ForTest {
 	public static void main(String[] args) {
 		//for
-		for(int i=1;i<=5;i++) {
+		for(int i=1;i<=10;i++) {
 			System.out.println("i :"+i);
 		}
 		//1부터 10까지 합
