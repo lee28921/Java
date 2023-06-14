@@ -16,7 +16,7 @@ public class Test08 {
 			for(int j=n-1;j>i;j--) {
 				System.out.print(" ");
 			}
-			for(int j=0;j<=i;j++) {
+			for(int j=0;j< 2 * i + 1;j++) {
 				System.out.print("*");
 			}
 			
