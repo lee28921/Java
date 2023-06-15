@@ -42,6 +42,7 @@ public class MethodTypeTest {
 	}
 	
 	// 형태3 : 매개 변수 X, 리턴값 O
+		//리턴 값을 사용하기에 void 대신 값을 호출하는 연산자를 똑같이 구현
 	public static boolean type3() { //매개 변수는 사용하지 않는다
 		int num1 = 1;
 		int num2 = 2;
