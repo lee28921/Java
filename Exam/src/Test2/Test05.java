@@ -35,10 +35,10 @@ public class Test05 {
 			int mid = (start + end) /2;
 			
 			if(arr[mid]>value) {
-				end = loc;
+				end = arr[mid];
 			}
 			else if (arr[mid] < value) {
-				start = loc;
+				start = arr[loc];
 			}
 			else {
 				loc = mid;
