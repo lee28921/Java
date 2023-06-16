@@ -26,9 +26,9 @@ public class Test04 {
 			
 			for(int j= i+1;j<5;j++) {
 				
-				if(arr[i] > arr[j]) {
+				if(arr[i] > arr[j]) { //i의 자리가 j보다 크다면
 					int temp = arr[j];
-					arr[j] = arr[i];
+					arr[j] = arr[i]; //자리 교환
 					arr[i] = temp;
 				}
 			}

@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 내용: 자바 배열 이진탐색 연습문제
  * 
  * 이진탐색
- * 	- 이진 탐색은 전체 원소가 정렬된 상태에서 중앙값을 기준으로 절반은 버리고
+ * 	- 이진 탐색은 전체 원소가 '정렬된' 상태에서 중앙값을 기준으로 절반은 버리고
  * 	  나머지 절반을 대상으로 검색을 수행하는 알고리즘이다
  * 
  * 검색단계
@@ -21,7 +21,7 @@ public class Test05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int[] arr= {5,10,18,22,35,55,75,103,152};
+		int[] arr= {5,10,18,22,35,55,75,103,152}; 
 		
 		System.out.print("검색할 값 입력 : ");
 		int value = sc.nextInt();
@@ -34,11 +34,11 @@ public class Test05 {
 		while(start<=end) {
 			int mid = (start + end) /2;
 			
-			if(arr[mid]>value) {
-				end = arr[mid];
+			if(arr[mid]>value) { //내가 찾는 값이 mid보다 작다면
+				end = mid -1;
 			}
-			else if (arr[mid] < value) {
-				start = arr[loc];
+			else if (arr[mid] < value) { //내가 찾는 값이 mid보다 크다면
+				start = mid+1;
 			}
 			else {
 				loc = mid;

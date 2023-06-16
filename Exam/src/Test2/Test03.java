@@ -18,10 +18,10 @@ public class Test03 {
 		System.out.print("\n");
 		
 		//배열의 원소를 역순으로 정렬
-		for(int j=0;j<5;j++) {
+		for(int j=0;j<5;j++) {	
 			int temp = arr[j];
-			arr[j] = arr.length -1 -j;
-			arr[9-j] = temp;	
+			arr[j] = arr[9-j];	// 10을 배열 1자리에 넣어주고
+			arr[9-j] = temp;	// 1을 배열 10의 자리에 넣는다
 		}
 		
 		//역순으로 정렬된 배열 출력
