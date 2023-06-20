@@ -34,8 +34,10 @@ public class Car {
 	}
 	
 	public void show() {
+		System.out.println("----------------");
 		System.out.println("차량명은 "+this.name);
 		System.out.println("차량색은 "+this.color);
 		System.out.println("차량 속도는 "+this.speed);
+		System.out.println("----------------");
 	}
 }

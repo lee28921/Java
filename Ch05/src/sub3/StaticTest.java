@@ -46,6 +46,7 @@ public class StaticTest {
 		Car avante = new Car("아반테","검정",20);
 		Car grande = new Car("그랜저","남색",30);
 		
+		
 		sonata.show();
 		avante.show();
 		grande.show();

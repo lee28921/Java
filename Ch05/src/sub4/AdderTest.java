@@ -32,21 +32,23 @@ class Adder {
 	
 	
 	public void add(int[] arr) {
-		x += arr[0];
-		y += arr[1];
-	}
+		x += arr[0]; // 10을 더한다
+		y += arr[1]; // 20을 더한다
+	} //
 	
 	public static void add(Adder a2) { //참조 변수 선언
-		a2.x += 10;
+		a2.x += 10; // x에 10을 더한다
 	}
 	
+	// a3은 a1에 대입해서 , value에 3??
 	public static Adder add(Adder a3, int value) { //클래스 메서드
-		return new Adder(value);
+		return new Adder(value); 
 	}
 	
 	public void show() {
 		System.out.println("X : "+x);
 		System.out.println("Y : "+y);
+		System.out.print("\n");
 	}
 	
 }
@@ -62,18 +64,12 @@ public class AdderTest {
 		a1.add(1,2);
 		a1.show();
 		
-		System.out.print("\n");
-		
 		int[] arr = {10,20}; //참조 변수
 		a1.add(arr);
 		a1.show();
 		
-		System.out.print("\n");
-		
 		Adder.add(a1);
 		a1.show();
-		
-		System.out.print("\n");
 		
 		Adder.add(a1,3);
 		a1.show();
