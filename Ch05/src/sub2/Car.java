@@ -51,12 +51,12 @@ public class Car { //내부 클래스
 	public void setColor(String color) {
 		this.color = color;
 	}
-	
-	public String getSpeed() {
+	*/
+	public int getSpeed() {
 		return speed;
 	}
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
-	*/
+	
 }
