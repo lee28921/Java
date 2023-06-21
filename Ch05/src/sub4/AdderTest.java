@@ -19,7 +19,8 @@ class Adder {
 		
 	} 
 	private Adder(int value) { //생성자
-		y+= value;
+		y+= value; // 마지막 클래스에 담긴 value 3은 y에 추가된다
+		
 	}
 	
 	private int x;
@@ -32,15 +33,16 @@ class Adder {
 	
 	
 	public void add(int[] arr) {
+		//x의 필드는 그대로 유지
 		x += arr[0]; // 10을 더한다
 		y += arr[1]; // 20을 더한다
-	} //
+	}
 	
 	public static void add(Adder a2) { //참조 변수 선언
 		a2.x += 10; // x에 10을 더한다
 	}
 	
-	// a3은 a1에 대입해서 , value에 3??
+	// a3은 a1에 대입해서 출력한다, value에 3
 	public static Adder add(Adder a3, int value) { //클래스 메서드
 		return new Adder(value); 
 	}
