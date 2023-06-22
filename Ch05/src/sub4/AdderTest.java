@@ -44,7 +44,7 @@ class Adder {
 	
 	// a3은 a1에 대입해서 출력한다, value에 3
 	public static Adder add(Adder a3, int value) { //클래스 메서드
-		return new Adder(value); 
+		return new Adder(value);
 	}
 	
 	public void show() {
