@@ -1,6 +1,6 @@
 package sub9;
 
-public class Bulb {
+public class Bulb { //내부 클래스
 	public void lightOn() {
 		System.out.println("전구 불 켜짐...");
 	}

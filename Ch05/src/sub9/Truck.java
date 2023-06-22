@@ -27,8 +27,8 @@ public class Truck implements Car{
 	@Override
 	public void show() {
 		System.out.println("차량명 : "+this.name);
-		System.out.println("차량명 : "+this.color);
-		System.out.println("차량명 : "+this.speed);
+		System.out.println("차량색 : "+this.color);
+		System.out.println("차량 속도 : "+this.speed);
 		
 	}
 

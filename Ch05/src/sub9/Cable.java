@@ -1,6 +1,6 @@
 package sub9;
 
-public class Cable implements Socket{
+public class Cable implements Socket{ //서브 클래스
 
 	private Bulb bulb;
 	
