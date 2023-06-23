@@ -1,21 +1,21 @@
 package step1;
-
-import java.io.*;
 import java.util.*;
 
 public class Test11 {
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
+		short a = sc.nextShort();
+		int b = sc.nextInt();
+		long c = sc.nextLong();
 		
-		BufferedReader br =
-				new BufferedReader(new InputStreamReader(System.in));
+		int d1 = 10;
+		int d2 = 12;
 		
-		String str = br.readLine();
+		int d = (int) Math.pow(d1, d2);
 		
-		
-		int num = Integer.parseInt(str);
-		
-		
+		if (a > 1 && c < d) {
+			System.out.println(a+b+c);
+		}
 		
 	}
 }
