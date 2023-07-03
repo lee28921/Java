@@ -36,8 +36,8 @@ public class Test10 {
 		map.put("gyungnam", list3);
 		
 		//수원 사과 출력
-		Map<String,> list = map.get("gyeonggi");
-		Apple apple = list.get(3);
+		List<Apple> list = map.get("gyeonggi");
+		Apple apple = list.get(2);
 		apple.show();
 		
 	}

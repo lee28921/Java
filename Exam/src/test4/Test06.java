@@ -63,10 +63,12 @@ public class Test06 {
 		Banana banana = new Banana("필리핀",2000);
 		Grape grape = new Grape("미국",3000);
 		
-		
+		test.showInfo(apple);
+		test.showInfo(banana);
+		test.showInfo(grape);
 	}
 	
-public void showInfo(Object fruit) {
+	public void showInfo(Object fruit) {
 		
 		if(fruit instanceof Apple) { //타입 검사
 			Apple apple =  (Apple)fruit;
