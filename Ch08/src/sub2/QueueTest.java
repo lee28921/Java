@@ -27,7 +27,7 @@ public class QueueTest {
 		queue.offer(5);
 		
 		while(!queue.isEmpty()) {
-			System.out.println(queue.poll());
+			System.out.println("queue poll : "+queue.poll());
 		}
 		
 	}
