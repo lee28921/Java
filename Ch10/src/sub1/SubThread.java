@@ -16,7 +16,6 @@ public class SubThread extends Thread{ //Thread를 상속받아야 한다
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
