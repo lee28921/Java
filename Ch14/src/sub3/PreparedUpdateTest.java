@@ -1,21 +1,20 @@
-package sub2;
+package sub3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.Statement;
+import java.sql.PreparedStatement;
 
 /**
  * 
- * 날짜: 2023/07/10
+ * 날짜: 2023/07/11
  * 이름: 이지민
- * 내용: DELETE 실습하기
+ * 내용: PreparedStatement 실습하기
  *
  */
-public class DelectTest {
+public class PreparedUpdateTest {
 	public static void main(String[] args) {
-		
-		// DB정보
-		String host = "jdbc:mysql://127.0.01:3306/userdb";
+		//DB 정보
+		String host = "jdbc:mysql://127.0.0.1:3306/userdb";
 		String user = "root";
 		String pass = "1234";
 		
@@ -27,23 +26,27 @@ public class DelectTest {
 			Connection conn = DriverManager.getConnection(host,user,pass);
 			
 			// 3단계 - SQL 실행 객체 생성
-			Statement stmt = conn.createStatement();
+			String sql = "UPDATE `User2` SET `Hp`=? , `age`=? WHERE `uid`=?";
+			PreparedStatement psmt = conn.prepareStatement(sql);
+			psmt.setString(1, "010-1234-1111");
+			psmt.setInt(2, 25);
+			psmt.setString(3, "j101");
 			
 			// 4단계 - SQL 실행
-			String sql = "DELETE FROM `User1` WHERE `uid`='j101';";
-			stmt.executeUpdate(sql);
-			
-			// 5단계 - 결과 처리
+			psmt.executeUpdate();
+			// 5단계 - 결과처리
 			// 6단계 - 연결해제
-			stmt.close();
+			psmt.close();
 			conn.close();
+			
+			
 			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println("Delete 완료...");
+		System.out.println("Update 완료...");
 		
 	}
 }
