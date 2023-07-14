@@ -7,6 +7,25 @@ public class OrderVO {
 	private int orderCount;
 	private String orderDate;
 	
+	//추가 필드 - join 사용시 다른 테이블의 도메인 추가
+	private String name;
+	private String prodName;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getProdName() {
+		return prodName;
+	}
+	public void setProdName(String prodName) {
+		this.prodName = prodName;
+	}
+	
+	
 	public int getOrderNo() {
 		return orderNo;
 	}
@@ -40,5 +59,10 @@ public class OrderVO {
 	}
 	public void setOrderDate(String orderDate) {
 		this.orderDate = orderDate;
+	}
+	
+	@Override
+	public String toString() {
+		return orderNo+","+name+","+prodName+","+orderCount+","+orderDate;
 	}
 }

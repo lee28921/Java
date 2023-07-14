@@ -13,7 +13,26 @@ public class SQL {
 													+ "`rdate`=NOW()";
 	
 	// order
+	public static final String SELECT_ORDERS = "SELECT a.*, "
+											+ "b.`name`, "
+											+ "`prodName` "
+											+ "FROM `Order` AS a "
+											+ "JOIN `Customer` AS b ON a.orderId = b.custId "
+											+ "JOIN `Product` AS c ON a.orderProduct = c.prodNo "
+											+ "WHERE `orderId`=? ";
+	
+	public static final String INSERT_ORDER = "INSERT INTO `order` SET "
+											+ "`orderId`=?, "
+											+ "`orderProduct`=?, "
+											+ "`orderCount`=?, "
+											+ "`orderDate`=NOW() ";
+	
+											
 	
 	// product
+	public static final String SELECT_PRODUCTS = "SELECT * FROM `Product` WHERE `stock` > 0";
 	
+	public static final String SELECT_PRODUCT = "SELECT * FROM `Product` WHERE `prodNo`=?";
+	
+	public final static String UPDATE_PRODUCT_STOCK = "UPDATE `Product` SET `stock` = `stock` - ? WHERE `prodNo`=?";
 }
