@@ -54,7 +54,7 @@ public class Test06 {
 		int low = 0;
 		int high = values.length -1;
 		
-		while(low <= high) {
+		while(low <= high) { // low가 high보다 작으면
 			count++;
 			int mid = (low+high) /2;
 			
