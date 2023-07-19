@@ -1,4 +1,4 @@
-package confirm.ch04;
+package confrim.ch04;
 
 import java.util.Scanner;
 
